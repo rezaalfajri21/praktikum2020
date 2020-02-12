@@ -1,0 +1,25 @@
+1. Guna Foreign Key
+
+create table siswa (
+	kode id_siswa (3) Primary key,
+	nama_siswa varchar (30),
+	alamat TEXT,
+	id_kelas INT (3),
+	Foreign Key (id_kelas) REFERENCES kelas (id_kelas)
+);
+
+2. AUTO INCREMENT :
+
+CREATE TABLE try (
+	id_pegawai int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nama varchar (255) Not Null,
+	umur int;
+
+buat table Barang :
+
+1.create table barang (kode_barang int (3) Primary Key, nama varchar (200), harga int (30.5) )
+
+table Pegawai :
+
+2.create table pegawai (kode_pegawai int(3) primary key, nama_pegawai varchar (100) NOT NULL, no_telpon Varchar (100), alamat text (200) )
+
